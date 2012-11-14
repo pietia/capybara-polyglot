@@ -8,9 +8,9 @@ module Capybara
           page.execute_script("$('#{selector}').click();")
         end
 
-        def confirm(sleep_time = 1)
+        def confirm
           page.driver.browser.switch_to.alert.accept
-          sleep sleep_time
+          sleep 1
         end
 
       end

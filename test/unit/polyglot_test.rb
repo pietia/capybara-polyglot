@@ -14,7 +14,6 @@ class PolyglotTest < Test::Unit::TestCase
   end
 
   def test_selenium
-    Capybara.default_driver = :selenium
     assert_respond_to(@scope, :confirm)
     assert_respond_to(@scope, :click_hidden)
 
