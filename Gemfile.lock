@@ -1,0 +1,51 @@
+PATH
+  remote: .
+  specs:
+    capybara-polyglot (0.0.1)
+      activesupport
+      capybara (>= 2.0.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.2.9)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    addressable (2.3.2)
+    capybara (2.0.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 1.0.0)
+    childprocess (0.3.6)
+      ffi (~> 1.0, >= 1.0.6)
+    ffi (1.1.5)
+    gem-release (0.4.1)
+    i18n (0.6.1)
+    libwebsocket (0.1.5)
+      addressable
+    mime-types (1.19)
+    multi_json (1.3.7)
+    nokogiri (1.5.5)
+    rack (1.4.1)
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rake (10.0.0)
+    rubyzip (0.9.9)
+    selenium-webdriver (2.26.0)
+      childprocess (>= 0.2.5)
+      libwebsocket (~> 0.1.3)
+      multi_json (~> 1.0)
+      rubyzip
+    xpath (1.0.0)
+      nokogiri (~> 1.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capybara-polyglot!
+  gem-release
+  rake
