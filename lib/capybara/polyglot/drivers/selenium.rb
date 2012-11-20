@@ -3,14 +3,10 @@ module Capybara
     module Drivers
       module Selenium
 
-        def click_hidden(selector)
-          page.execute_script("$('#{selector}').trigger('mouseenter');")
-          page.execute_script("$('#{selector}').click();")
-        end
+        include Default
 
         def confirm
           page.driver.browser.switch_to.alert.accept
-          sleep 1
         end
 
       end
