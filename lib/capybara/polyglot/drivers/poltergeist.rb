@@ -1,16 +1,15 @@
 module Capybara
   module Polyglot
     module Drivers
-      module Webkit
+      module Poltergeist
 
         include Default
 
         def confirm
-          page.driver.accept_js_confirms!
         end
 
         def submit(selector)
-          page.driver.browser.execute_script("$('#{selector}').submit()")
+          page.execute_script("$('#{selector}').submit()")
         end
 
       end

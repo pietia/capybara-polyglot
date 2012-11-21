@@ -7,10 +7,6 @@ module Capybara
           find(selector, :visible => false).click
         end
 
-        def submit(selector)
-          page.driver.browser.execute_script("$('#{selector}').submit()")
-        end
-
       end
     end
   end

@@ -13,6 +13,10 @@ module Capybara
           page.driver.browser.switch_to.alert.accept
         end
 
+        def submit(selector)
+          page.driver.browser.execute_script("$('#{selector}').submit()")
+        end
+
       end
     end
   end
