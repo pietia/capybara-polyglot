@@ -7,7 +7,7 @@ module Capybara
           find(selector, :visible => false).click
         end
 
-        def debug
+        def debug_session
           puts page.inspect
         end
 

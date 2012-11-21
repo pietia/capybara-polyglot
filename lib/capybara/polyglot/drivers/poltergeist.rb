@@ -8,7 +8,7 @@ module Capybara
         def confirm
         end
 
-        def debug
+        def debug_session
           puts page.driver.network_traffic
           page.driver.debug
         end
