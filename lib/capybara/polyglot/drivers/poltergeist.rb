@@ -9,7 +9,9 @@ module Capybara
         end
 
         def debug_session
-          puts page.driver.network_traffic
+          #puts page.driver.network_traffic
+          stamp = Time.now.to_i
+          page.driver.render "tmp/screenshot-#{stamp}.png", :full => true
           page.driver.debug
         end
 

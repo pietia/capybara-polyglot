@@ -6,7 +6,7 @@ module Capybara
         include Default
 
         def click_hidden(selector)
-          page.execute_script("$('#{selector}').click();")
+          page.execute_script("$('#{selector}').trigger('mouseenter').click();")
         end
 
         def confirm
@@ -14,7 +14,7 @@ module Capybara
         end
 
         def submit(selector)
-          page.driver.browser.execute_script("$('#{selector}').submit()")
+          page.execute_script("$('#{selector}').submit()")
         end
 
       end
