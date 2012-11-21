@@ -17,7 +17,7 @@ module Capybara
             driver      = Capybara.current_driver
             begin
               mod.send(:include, Capybara::Polyglot::Drivers.const_get(driver.to_s.camelize))
-            rescue NameError
+            rescue StandardError
               puts "Driver: #{driver} not supported by capybara-polyglot"
               mod.send(:include, Capybara::Polyglot::Drivers::Default)
             end
