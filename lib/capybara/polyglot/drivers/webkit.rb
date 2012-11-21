@@ -14,7 +14,8 @@ module Capybara
         end
 
         def debug_session
-          page.driver.render "tmp/screenshot.png"
+          stamp = Time.now.to_i
+          page.driver.render "tmp/screenshot-#{stamp}.png"
         end
 
       end
