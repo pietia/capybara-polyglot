@@ -4,8 +4,7 @@ module Capybara
       module Default
 
         def click_hidden(selector)
-          page.execute_script("$('#{selector}').trigger('mouseenter');")
-          page.execute_script("$('#{selector}').click();")
+          find(selector, :visible => false).click
         end
 
         def submit(selector)
