@@ -13,6 +13,10 @@ module Capybara
           page.driver.browser.execute_script("$('#{selector}').submit()")
         end
 
+        def debug_session
+          page.driver.render "tmp/screenshot.png"
+        end
+
       end
     end
   end
