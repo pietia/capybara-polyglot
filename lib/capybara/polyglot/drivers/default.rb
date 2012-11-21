@@ -7,6 +7,10 @@ module Capybara
           find(selector, :visible => false).click
         end
 
+        def debug
+          puts page.inspect
+        end
+
       end
     end
   end
