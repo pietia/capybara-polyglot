@@ -3,6 +3,9 @@ module Capybara
     module Drivers
       module Default
 
+        def confirm
+        end
+
         def click_hidden(selector)
           find(selector, :visible => false).click
         end
