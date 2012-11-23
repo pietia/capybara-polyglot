@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors       = ["Piotr Gęga"]
   s.email         = ["pietia@appgrinder.pl"]
   s.homepage      = "https://github.com/pietia/capybara-polyglot"
-  s.summary       = "TODO: summary"
-  s.description   = "TODO: description"
+  s.summary       = "Normalize helper implementations for Capybara."
+  s.description   = "Provides a unified interface with different adapters/implementations per each capybara driver/engine."
 
   s.files         = `git ls-files app lib`.split("\n")
   s.platform      = Gem::Platform::RUBY
