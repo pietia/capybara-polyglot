@@ -10,10 +10,8 @@ module Capybara
         end
 
         def debug_session
-          #puts page.driver.network_traffic
-          stamp = Time.now.to_i
-          page.driver.render "tmp/screenshot-#{stamp}.png", :full => true
-          page.driver.debug
+          file_name = "#{Time.now.to_i}_#{example.description}.png".downcase.gsub(/\s+/,"_")
+          page.driver.render "tmp/screenshot_#{file_name}.png", :full => true
         end
 
         def submit(selector)

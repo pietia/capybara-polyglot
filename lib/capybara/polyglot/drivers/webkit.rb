@@ -14,8 +14,8 @@ module Capybara
         end
 
         def debug_session
-          stamp = Time.now.to_i
-          page.driver.render "tmp/screenshot-#{stamp}.png"
+          file_name = "#{Time.now.to_i}_#{example.description}.png".downcase.gsub(/\s+/,"_")
+          page.save_screenshot "tmp/screenshot_#{file_name}.png"
         end
 
       end
