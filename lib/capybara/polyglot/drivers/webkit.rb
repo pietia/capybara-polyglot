@@ -14,7 +14,7 @@ module Capybara
         end
 
         def debug_session
-          file_name = "#{Time.now.to_i}_#{example.description}.png".downcase.gsub(/\s+/,"_")
+          file_name = "#{Time.now.to_i}_#{example.description}".downcase.gsub(/\s+/,"_")
           page.save_screenshot "tmp/screenshot_#{file_name}.png"
         end
 
