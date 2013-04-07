@@ -1,4 +1,5 @@
 require File.expand_path("polyglot/version", File.dirname(__FILE__))
+require File.expand_path("polyglot/drivers/default/javascript_helpers", File.dirname(__FILE__))
 require File.expand_path("polyglot/drivers/default", File.dirname(__FILE__))
 require File.expand_path("polyglot/drivers/selenium", File.dirname(__FILE__))
 require File.expand_path("polyglot/drivers/webkit", File.dirname(__FILE__))
