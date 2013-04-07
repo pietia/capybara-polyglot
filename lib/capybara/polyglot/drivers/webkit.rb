@@ -10,7 +10,7 @@ module Capybara
         end
 
         def submit(selector)
-          page.driver.browser.execute_script("$('#{selector}').submit()")
+          page.driver.browser.execute_script js_query(selector, 'submit()')
         end
 
         def debug_session
