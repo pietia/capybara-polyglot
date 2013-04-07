@@ -3,6 +3,8 @@ module Capybara
     module Drivers
       module Default
 
+        include JavascriptHelpers
+
         def confirm
         end
 
