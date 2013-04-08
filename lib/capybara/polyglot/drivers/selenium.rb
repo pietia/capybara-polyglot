@@ -6,7 +6,8 @@ module Capybara
         include Default
 
         def click_hidden(selector)
-          page.execute_script("$('#{selector}').trigger('mouseenter').click();")
+          page.execute_script js_query(selector, 'style.display = "block"')
+          find(selector).click
         end
 
         def submit(selector)

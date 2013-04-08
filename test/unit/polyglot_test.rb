@@ -23,5 +23,4 @@ class PolyglotTest < Test::Unit::TestCase
     # Capybara.default_driver = :selenium
   end
 
-
 end
