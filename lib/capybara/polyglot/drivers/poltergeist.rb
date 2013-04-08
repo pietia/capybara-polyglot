@@ -16,7 +16,7 @@ module Capybara
         end
 
         def submit(selector)
-          page.execute_script("$('#{selector}').submit()")
+          page.execute_script js_query(selector, 'submit()')
         end
 
       end
